@@ -2,12 +2,11 @@
 
 :root {
   --bg: #07111f;
-  --panel: #0d1b2d;
   --text: #f5f7fb;
   --muted: #a9b6c8;
   --line: rgba(255,255,255,.10);
-  --accent: #35a7ff;
-  --accent2: #67d8ff;
+  --accent: #2d8ec7;
+  --accent2: #63c7ef;
 }
 
 html { scroll-behavior: smooth; }
@@ -16,7 +15,7 @@ body {
   margin: 0;
   font-family: Inter, Arial, sans-serif;
   background:
-    radial-gradient(circle at 85% 10%, rgba(53,167,255,.18), transparent 30%),
+    radial-gradient(circle at 85% 10%, rgba(45,142,199,.20), transparent 30%),
     linear-gradient(180deg, #07111f 0%, #0a1525 100%);
   color: var(--text);
   min-height: 100vh;
@@ -34,24 +33,18 @@ a { color: inherit; text-decoration: none; }
 }
 
 .brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.brand-mark {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
+  display: inline-flex;
+  background: #fff;
+  padding: 10px 14px;
   border-radius: 12px;
-  font-weight: 800;
-  background: linear-gradient(135deg, var(--accent), var(--accent2));
-  color: #04111e;
+  box-shadow: 0 10px 30px rgba(0,0,0,.18);
 }
 
-.brand strong, .brand small { display: block; }
-.brand small { color: var(--muted); margin-top: 2px; }
+.brand img {
+  width: min(330px, 55vw);
+  height: auto;
+  display: block;
+}
 
 .nav-link {
   color: var(--muted);
@@ -191,8 +184,8 @@ h1 {
   margin-top: 70px;
   padding: 40px;
   border-radius: 22px;
-  background: linear-gradient(135deg, rgba(53,167,255,.16), rgba(103,216,255,.05));
-  border: 1px solid rgba(103,216,255,.20);
+  background: linear-gradient(135deg, rgba(45,142,199,.16), rgba(99,199,239,.05));
+  border: 1px solid rgba(99,199,239,.20);
   display: flex;
   align-items: center;
   justify-content: space-between;

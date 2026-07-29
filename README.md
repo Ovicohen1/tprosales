@@ -3,5 +3,6 @@
 Files:
 - index.html
 - styles.css
+- technical-pro-logo.jpg
 
-This site is ready for GitHub Pages, Cloudflare Pages, or any basic static web host.
+Main company website: https://tpro.com
